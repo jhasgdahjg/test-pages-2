@@ -1,8 +1,26 @@
-## Welcome to GitHub Pages
+## Creating EKS & Deploying 4care components
 
 You can use the [editor on GitHub](https://github.com/jhasgdahjg/test-pages-2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Prerequisites
+First: It is assumed you are testing this example from a trusted workstation with **terraform, kubectl, helm** and **AWS CLI** tools available.
+
+Second: configure an [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) for your account aws_profile : (AWS profile is a collection of settings and credentials that you can apply to an AWS CLI command).
+ 
+Hint: with the AWS CLI, use 
+
+```markdown
+aws configure list-profiles
+```
+
+to list the profiles you have configured and to confirm the AWS region you will be deploying in EKS.
+
+```markdown
+aws configure get region --profile <name> 
+```
+  
+
+
 
 ### Markdown
 
